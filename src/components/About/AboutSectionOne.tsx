@@ -1,5 +1,8 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { cn } from "utils/cn";
+import GridPattern from "@/components/magicui/grid-pattern";
+import DotPattern from "@/components/magicui/dotpattern";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -20,12 +23,22 @@ const AboutSectionOne = () => {
   return (
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg bg-background p-20">
+      <p className="z-10 whitespace-pre-wrap text-center text-3xl lg:text-5xl font-medium tracking-tighter text-black dark:text-white">
+        Company Profile
+      </p>
+      <DotPattern
+        className={cn(
+          "[mask-image:radial-gradient(200px_circle_at_center,white,transparent)]",
+        )}
+      />
+    </div>
+        <div className=" md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title=""
+                paragraph="Divya Enterprise is a well-established company specializing exclusively in industrial fuels. Based in Ahmedabad, Gujarat, Divya Enterprise is committed to providing the highest quality industrial fuels to its clients.This focus on quality and expertise ensures that our company consistently delivers products that meet and exceed client expectations. With its dedicated approach and advanced equipment, we have earned a reputation for reliability and excellence in the industrial fuels market."
                 mb="44px"
               />
 
@@ -67,6 +80,125 @@ const AboutSectionOne = () => {
             </div>
           </div>
         </div>
+        
+
+<div className="relative overflow-x-auto">
+    <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" className="px-6 py-3">
+                    Basic Information
+                </th>
+                
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Nature of Business
+                </th>
+                <td className="px-6 py-4">
+                Wholesaler/Distributor, Trader and Supplier
+                </td>
+                
+            </tr>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Year of Establishment
+                </th>
+                <td className="px-6 py-4">
+                    Since 2002
+                </td>
+                
+            </tr>
+            <tr className="bg-white dark:bg-gray-800">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Warehouse Facility
+                </th>
+                <td className="px-6 py-4">
+                    Yes
+                </td>
+                
+            </tr>
+            <tr className="bg-white dark:bg-gray-800">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Company Branches
+                </th>
+                <td className="px-6 py-4">
+                    01
+                </td>
+                
+            </tr>
+            <tr className="bg-white dark:bg-gray-800">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Annual Turnover 
+                </th>
+                <td className="px-6 py-4">
+                   Above INR Rs 5 CR
+                </td>
+                
+            </tr>
+            <tr className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Statutory Profile
+                </th>
+               
+                
+            </tr>
+            <tr className="bg-white dark:bg-gray-800">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    GST No
+                </th>
+                <td className="px-6 py-4">
+                    akdakd
+                </td>
+                
+            </tr>
+            <tr className="bg-white dark:bg-gray-800">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Banker
+                </th>
+                <td className="px-6 py-4">
+                    ICICI Bank Ltd
+                </td>
+                
+            </tr>
+            <tr className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Payment and Shipment Details
+                </th>
+               
+                
+            </tr>
+            <tr className="bg-white dark:bg-gray-800">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Payment Mode
+                </th>
+                <td className="px-6 py-4">
+                    <ul>
+                      <li>Cash</li>
+                      <li>Credit Card</li>
+                      <li>DD</li>
+                      <li>Cheque</li>
+                      <li>Bank Transfer</li>
+                    </ul>
+                </td>
+                
+            </tr>
+            <tr className="bg-white dark:bg-gray-800">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Shipment Mode
+                </th>
+                <td className="px-6 py-4">
+                    By Road
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
+
       </div>
     </section>
   );
