@@ -3,6 +3,7 @@ import SectionTitle from "../Common/SectionTitle";
 import { cn } from "utils/cn";
 import GridPattern from "@/components/magicui/grid-pattern";
 import DotPattern from "@/components/magicui/dotpattern";
+import office from "../images/office.jpg"
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -65,9 +66,9 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/about-image.svg"
+                  src={office}
                   alt="about-image"
-                  fill
+                  
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image

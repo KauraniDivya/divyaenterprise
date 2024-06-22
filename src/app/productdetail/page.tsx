@@ -22,7 +22,7 @@ const ProductDetail = () => {
           <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
 
             <div className="px-4 py-10 rounded-xl shadow-[0_2px_10px_-3px_#f96b004d] dark:shadow-[0_2px_10px_-3px_rgba(255,255,255,0.3)] flex justify-center items-center align-middle h-[27rem] ">
-              <Image src={sample} width={1000} height={1000} alt="Product" className=" w-auto rounded object-fit h-auto " />
+              <Image src={sample} width={500} height={500} alt="Product" className=" w-auto rounded object-fit h-auto " />
 
             </div>
 
